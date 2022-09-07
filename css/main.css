@@ -13,10 +13,33 @@
 .ser-head h3{
 	display:flex;
 	justify-content:center;
-	padding-bottom:15px;
-	 font-size: 20px;
+	padding-bottom:25px;
+	font-size: 20px;
     font-family: sans-serif;
     font-weight: bolder;padding-top:30px;
+}
+.ser-head h3::before{
+	content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 50px);
+	top:56px;
+}
+.ser-head h3::after{
+	content: "";
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 3px;
+    background:#f57b0c;
+;
+    bottom: 0;
+    left: calc(50% - 20px);
+	top:55px;
 }
 .ser-head p{
 	display:flex;
